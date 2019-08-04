@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -36,9 +29,11 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          <p>ROMAN KORNILOV Photo & Video</p>
+          <p>КОНТАКТЫ: +7 (905) 556 94 07 kornilov.business@gmail.com</p>
+          <p>Я ОНЛАЙН:</p>© {new Date().getFullYear()}, Copyright: Roman
+          Kornilov. PhotoArt. All right reserved.
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
     </>
