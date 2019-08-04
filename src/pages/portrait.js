@@ -1,19 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
+// import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const Portrait = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Портрет</h1>
 
-    {/* <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div> */}
+    <div>
+      <h1>Портрет</h1>
+      {/* <Img
+        fixed={data.file.childImageSharp.fixed}
+        alt="Gatsby Docs are awesome"
+      /> */}
+    </div>
+    {/* ------------------ */}
     <Link to="/portrait/">portrait</Link>
     <br />
     <Link to="/reportage/">reportage</Link>
@@ -28,4 +32,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default Portrait

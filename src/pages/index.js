@@ -4,12 +4,13 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+// import Slider from "../components/slider"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Главная</h1>
-
+    {/* <Slider>123</Slider> */}
     {/* <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
