@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -28,13 +29,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          <p>ROMAN KORNILOV Photo & Video</p>
-          <p>КОНТАКТЫ: +7 (905) 556 94 07 kornilov.business@gmail.com</p>
-          <p>Я ОНЛАЙН:</p>© {new Date().getFullYear()}, Copyright: Roman
-          Kornilov. PhotoArt. All right reserved.
-          {` `}
-        </footer>
+
+        <Footer />
       </div>
     </>
   )
