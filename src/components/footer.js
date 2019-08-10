@@ -1,27 +1,38 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact"
+import styled from "styled-components"
 
-const FooterPage = () => {
+const Wrapper = styled.div`
+  background: #1e1f1c;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+`
+
+const Container = styled.div`
+  margin: 0 auto;
+  width: 90%;
+  padding: 0px 1.0875rem 0.5rem;
+`
+const Title = styled.h5`
+  text-transform: uppercase;
+`
+
+const Footer = () => {
   return (
-    <div style={{ backgroundColor: `#1E1F1C` }}>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem .5rem`,
-          paddingTop: 0,
-          color: `white`,
-        }}
-      >
+    <Wrapper>
+      <Container>
         <MDBFooter color="blue" className="font-small pt-4 mt-4">
           <MDBContainer fluid className="text-center text-md-left">
             <MDBRow>
               <MDBCol md="4">
-                <h5 className="title">ROMAN KORNILOV</h5>
+                <Title>Roman Kornilov</Title>
                 <p>Photo & Video</p>
               </MDBCol>
               <MDBCol md="4">
-                <h5 className="title text-center">КОНТАКТЫ</h5>
+                <Title className="text-center">Контакты</Title>
                 <ul className="text-center">
                   <li className="list-unstyled">
                     <a href="tel:+79055569407" style={{ color: `white` }}>
@@ -39,7 +50,7 @@ const FooterPage = () => {
                 </ul>
               </MDBCol>
               <MDBCol md="4">
-                <h5 className="title text-center text-md-right">Я ОНЛАЙН:</h5>
+                <Title className="text-center text-md-right">Я онлайн:</Title>
                 <ul className="list-inline list-unstyled my-0">
                   <li className="list-inline-item">
                     <a
@@ -72,9 +83,17 @@ const FooterPage = () => {
             </MDBContainer>
           </div>
         </MDBFooter>
-      </div>
-    </div>
+      </Container>
+    </Wrapper>
   )
 }
 
-export default FooterPage
+Footer.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Footer.defaultProps = {
+  siteTitle: ``,
+}
+
+export default Footer

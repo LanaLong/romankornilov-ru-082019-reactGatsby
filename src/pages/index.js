@@ -6,6 +6,17 @@ import Layout from "../components/layout"
 import SliderMdb from "../components/sliderMdb"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import styled from "styled-components"
+
+const SectionAbout = styled.div`
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+`
 
 const IndexPage = () => (
   <Layout>
@@ -13,8 +24,8 @@ const IndexPage = () => (
     {/* <ControlledCarousel /> */}
     <SliderMdb />
 
-    <section className="team-section my-5">
-      <div className="row text-center text-md-left justify-content-center pt-5">
+    <SectionAbout>
+      <div className="row text-center text-md-left justify-content-center pt-4">
         <div className="col-xl-8 col-lg-12 mb-5 d-md-flex justify-content-between">
           <div className="avatar mb-md-0 mb-4 mx-4">
             <img
@@ -24,7 +35,7 @@ const IndexPage = () => (
             />
           </div>
           <div className="mx-4">
-            <h4 className="avatar-h font-weight-bold text-uppercase text-light mb-3">
+            <h4 className="avatar-h font-weight-bold text-uppercase mb-3">
               Roman Kornilov
             </h4>
             <h6 className="avatar-h font-weight-bold grey-text mb-3">
@@ -61,7 +72,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-    </section>
+    </SectionAbout>
 
     {/* Working process */}
 

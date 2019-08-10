@@ -13,12 +13,14 @@ const Wrapper = styled.div`
 `
 const Container = styled.div`
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   padding: 0.5rem 1.0875rem;
 `
 const StyledLink = styled(props => <Link {...props} />)`
   color: #fff;
   text-decoration: none;
+  padding-right: 15px;
+  font-size: 0.9rem;
   &:hover {
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
@@ -36,32 +38,28 @@ const Header = ({ siteTitle }) => (
   <Wrapper style={{}}>
     <Container>
       <Navbar expand="lg">
-        <Navbar.Brand>
-          <StyledLink to="/">[ {siteTitle} ]</StyledLink>
-        </Navbar.Brand>
+        {/* <Navbar.Brand> */}
+        <StyledLink to="/">[ {siteTitle} ]</StyledLink>
+        {/* </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="justify-content-center">
+          <Nav className="justify-content-center m-auto">
             <StyledLink to="/portrait/">портрет</StyledLink>
             <StyledLink to="/reportage/">репортаж</StyledLink>
             <StyledLink to="/video/">видео</StyledLink>
             <StyledLink to="/about/">обо мне</StyledLink>
             <StyledLink to="/contacts/">контакты</StyledLink>
           </Nav>
-          <span className="navbar-text ml-auto mr-3">
-            <StyledA href="tel:+79055569407">+7 (905) 556 94 07</StyledA>
-          </span>
-          <span>
-            <a
-              href="https://www.instagram.com/roman_kornilov/"
-              className="ins-ic mr-3"
-            >
-              <i className="fa fa-lg fa-instagram text-white"></i>
-            </a>
-            <a href="https://vk.com/kornilovpro" className="vk-ic mr-3">
-              <i className="fa fa-lg fa-vk text-white"> </i>
-            </a>
-          </span>
+          <StyledA href="tel:+79055569407">+7 (905) 556 94 07</StyledA>
+          <a
+            href="https://www.instagram.com/roman_kornilov/"
+            className="ins-ic mr-3"
+          >
+            <i className="fa fa-lg fa-instagram text-white"></i>
+          </a>
+          <a href="https://vk.com/kornilovpro" className="vk-ic mr-3">
+            <i className="fa fa-lg fa-vk text-white"> </i>
+          </a>
         </Navbar.Collapse>
       </Navbar>
     </Container>

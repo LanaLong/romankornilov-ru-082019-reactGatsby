@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 const ReportagePage = () => (
   <Layout>
     <SEO title="Роман Корнилов — Репортаж" />
-    <h1>Репортаж</h1>
     <section id="gallery-lightbox" className="spacing-top-gallery">
       <div className="row pt-2 mt-4">
         <div className="col-md-12">
