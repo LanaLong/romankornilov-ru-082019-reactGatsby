@@ -3,12 +3,12 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact"
 
 const FooterPage = () => {
   return (
-    <div style={{ backgroundColor: `#333` }}>
+    <div style={{ backgroundColor: `#1E1F1C` }}>
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
+          padding: `0px 1.0875rem .5rem`,
           paddingTop: 0,
           color: `white`,
         }}
@@ -39,19 +39,19 @@ const FooterPage = () => {
                 </ul>
               </MDBCol>
               <MDBCol md="4">
-                <h5 className="title text-right">Я ОНЛАЙН:</h5>
-                <ul class="list-inline list-unstyled my-0">
-                  <li class="list-inline-item">
+                <h5 className="title text-center text-md-right">Я ОНЛАЙН:</h5>
+                <ul className="list-inline list-unstyled my-0">
+                  <li className="list-inline-item">
                     <a
                       href="https://www.instagram.com/roman_kornilov/"
-                      class="ins-ic mr-3"
+                      className="ins-ic mr-3"
                     >
-                      <i class="fa fa-lg fa-instagram text-white"></i>
+                      <i className="fa fa-lg fa-instagram text-white"></i>
                     </a>
                   </li>
-                  <li class="list-inline-item">
-                    <a href="https://vk.com/kornilovpro" class="vk-ic mr-3">
-                      <i class="fa fa-lg fa-vk text-white"> </i>
+                  <li className="list-inline-item">
+                    <a href="https://vk.com/kornilovpro" className="vk-ic mr-3">
+                      <i className="fa fa-lg fa-vk text-white"> </i>
                     </a>
                   </li>
                 </ul>
@@ -59,11 +59,11 @@ const FooterPage = () => {
             </MDBRow>
           </MDBContainer>
           <div className="footer-copyright text-center py-3">
-            <MDBContainer fluid>
+            <MDBContainer fluid style={{ color: `grey` }}>
               &copy; {new Date().getFullYear()} Copyright:{" "}
-              <a href="https:\\romankornilov.ru" style={{ color: `white` }}>
+              <a href="https:\\romankornilov.ru" style={{ color: `grey` }}>
                 {" "}
-                Roman Kornilov. PhotoArt Production.
+                Roman Kornilov. PhotoArt&nbsp;Production.
               </a>{" "}
               All right reserved.
             </MDBContainer>

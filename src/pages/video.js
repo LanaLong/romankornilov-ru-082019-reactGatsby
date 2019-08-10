@@ -14,10 +14,10 @@ const VideoPage = () => (
         background: `#333`,
       }}
     >
-      <div class="embed-responsive embed-responsive-16by9">
+      <div className="embed-responsive embed-responsive-16by9">
         <iframe
           title="Roman Kornilov — Video"
-          class="embed-responsive-item"
+          className="embed-responsive-item"
           src="https://player.vimeo.com/video/305224909"
           webkitallowfullscreen
           mozallowfullscreen
@@ -30,22 +30,22 @@ const VideoPage = () => (
         </p>
       </div>
       {/* <!-- /Video --> */}
-      <div class="row text-center justify-content-center">
-        <div class="col-12">
+      <div className="row text-center justify-content-center">
+        <div className="col-12">
           <a
             href="https://vimeo.com/romankornilov"
-            class="vimeo-link text-white"
+            className="vimeo-link text-white"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button
               type="button"
-              class="btn btn-outline-primary btn-rounded waves-effect text-center"
+              className="btn btn-outline-primary btn-rounded waves-effect text-center"
               aria-pressed="true"
             >
-              <h6 class="add text-white text-center pt-2 px-3">
+              <h6 className="add text-white text-center pt-2 px-3">
                 Другие видео на &nbsp;&nbsp;
-                <i class="fa fa-vimeo" aria-hidden="true"></i> &nbsp;Vimeo
+                <i className="fa fa-vimeo" aria-hidden="true"></i> &nbsp;Vimeo
               </h6>
             </button>
           </a>

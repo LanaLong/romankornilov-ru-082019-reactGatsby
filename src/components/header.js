@@ -6,8 +6,7 @@ import { Navbar, Nav } from "react-bootstrap"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#333`,
-      //   marginBottom: `1.45rem`,
+      background: `#1E1F1C`,
     }}
   >
     <div
@@ -26,13 +25,13 @@ const Header = ({ siteTitle }) => (
               textDecoration: `none`,
             }}
           >
-            {siteTitle}
+            [ {siteTitle} ]
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-center">
-            <Link className="headerLink" to="/portrait/">
+            <Link style={{ color: `white` }} to="/portrait/">
               portrait
             </Link>
             <Link
@@ -47,23 +46,33 @@ const Header = ({ siteTitle }) => (
             >
               reportage
             </Link>
-            <Link to="/video/">video</Link>
-            <Link to="/about/">about</Link>
-            <Link to="/price/">price</Link>
-            <Link to="/contacts/">contacts</Link>
+            <Link style={{ color: `white` }} to="/video/">
+              video
+            </Link>
+            <Link style={{ color: `white` }} to="/about/">
+              about
+            </Link>
+            {/* <Link style={{ color: `white` }} to="/price/">
+              price
+            </Link> */}
+            <Link style={{ color: `white` }} to="/contacts/">
+              contacts
+            </Link>
           </Nav>
-          <span class="navbar-text ml-auto mr-3">
-            <a href="tel:+79055569407">+7 (905) 556 94 07</a>
+          <span className="navbar-text ml-auto mr-3">
+            <a href="tel:+79055569407" style={{ color: `white` }}>
+              +7 (905) 556 94 07
+            </a>
           </span>
           <span>
             <a
               href="https://www.instagram.com/roman_kornilov/"
-              class="ins-ic mr-3"
+              className="ins-ic mr-3"
             >
-              <i class="fa fa-lg fa-instagram text-white"></i>
+              <i className="fa fa-lg fa-instagram text-white"></i>
             </a>
-            <a href="https://vk.com/kornilovpro" class="vk-ic mr-3">
-              <i class="fa fa-lg fa-vk text-white"> </i>
+            <a href="https://vk.com/kornilovpro" className="vk-ic mr-3">
+              <i className="fa fa-lg fa-vk text-white"> </i>
             </a>
           </span>
         </Navbar.Collapse>

@@ -22,7 +22,8 @@ function SliderMdb() {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                // src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                src="../images/slider/big/portrait_14-min.jpg"
                 alt="First slide"
               />
             </MDBView>
@@ -31,7 +32,8 @@ function SliderMdb() {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                // src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                src="../images/slider/big/portrait_53-min.jpg"
                 alt="Second slide"
               />
             </MDBView>
@@ -40,7 +42,8 @@ function SliderMdb() {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                // src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                src="../images/portrait/big/min/portrait_112.jpg"
                 alt="Third slide"
               />
             </MDBView>
