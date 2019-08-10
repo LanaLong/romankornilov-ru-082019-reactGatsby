@@ -52,6 +52,20 @@ const Header = ({ siteTitle }) => (
             <Link to="/price/">price</Link>
             <Link to="/contacts/">contacts</Link>
           </Nav>
+          <span class="navbar-text ml-auto mr-3">
+            <a href="tel:+79055569407">+7 (905) 556 94 07</a>
+          </span>
+          <span>
+            <a
+              href="https://www.instagram.com/roman_kornilov/"
+              class="ins-ic mr-3"
+            >
+              <i class="fa fa-lg fa-instagram text-white"></i>
+            </a>
+            <a href="https://vk.com/kornilovpro" class="vk-ic mr-3">
+              <i class="fa fa-lg fa-vk text-white"> </i>
+            </a>
+          </span>
         </Navbar.Collapse>
       </Navbar>
     </div>
