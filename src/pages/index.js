@@ -13,7 +13,7 @@ const IndexPage = () => (
     {/* <ControlledCarousel /> */}
     <SliderMdb />
 
-    <section className="team-section bg-dark my-5">
+    <section className="team-section my-5">
       <div className="row text-center text-md-left justify-content-center pt-5">
         <div className="col-xl-8 col-lg-12 mb-5 d-md-flex justify-content-between">
           <div className="avatar mb-md-0 mb-4 mx-4">

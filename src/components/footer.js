@@ -58,7 +58,10 @@ const FooterPage = () => {
               </MDBCol>
             </MDBRow>
           </MDBContainer>
-          <div className="footer-copyright text-center py-3">
+          <div
+            className="footer-copyright text-center py-3"
+            // style={{ backgroundColor: `#1A1A1A` }}
+          >
             <MDBContainer fluid style={{ color: `grey` }}>
               &copy; {new Date().getFullYear()} Copyright:{" "}
               <a href="https:\\romankornilov.ru" style={{ color: `grey` }}>

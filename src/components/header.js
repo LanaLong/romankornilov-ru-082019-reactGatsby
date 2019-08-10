@@ -2,67 +2,54 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+  background: #1e1f1c;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  text-transform: uppercase;
+`
+const Container = styled.div`
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.5rem 1.0875rem;
+`
+const StyledLink = styled(props => <Link {...props} />)`
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+  }
+`
+const StyledA = styled.a`
+  color: #fff;
+  &:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+  }
+`
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#1E1F1C`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `.5rem 1.0875rem`,
-      }}
-    >
+  <Wrapper style={{}}>
+    <Container>
       <Navbar expand="lg">
         <Navbar.Brand>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            [ {siteTitle} ]
-          </Link>
+          <StyledLink to="/">[ {siteTitle} ]</StyledLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-center">
-            <Link style={{ color: `white` }} to="/portrait/">
-              portrait
-            </Link>
-            <Link
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-                textTransform: `uppercase`,
-                fontFamily: `sans-serif`,
-                padding: `0 10px`,
-              }}
-              to="/reportage/"
-            >
-              reportage
-            </Link>
-            <Link style={{ color: `white` }} to="/video/">
-              video
-            </Link>
-            <Link style={{ color: `white` }} to="/about/">
-              about
-            </Link>
-            {/* <Link style={{ color: `white` }} to="/price/">
-              price
-            </Link> */}
-            <Link style={{ color: `white` }} to="/contacts/">
-              contacts
-            </Link>
+            <StyledLink to="/portrait/">портрет</StyledLink>
+            <StyledLink to="/reportage/">репортаж</StyledLink>
+            <StyledLink to="/video/">видео</StyledLink>
+            <StyledLink to="/about/">обо мне</StyledLink>
+            <StyledLink to="/contacts/">контакты</StyledLink>
           </Nav>
           <span className="navbar-text ml-auto mr-3">
-            <a href="tel:+79055569407" style={{ color: `white` }}>
-              +7 (905) 556 94 07
-            </a>
+            <StyledA href="tel:+79055569407">+7 (905) 556 94 07</StyledA>
           </span>
           <span>
             <a
@@ -77,8 +64,8 @@ const Header = ({ siteTitle }) => (
           </span>
         </Navbar.Collapse>
       </Navbar>
-    </div>
-  </header>
+    </Container>
+  </Wrapper>
 )
 
 Header.propTypes = {
