@@ -18,7 +18,7 @@ const IndexPage = () => (
         <div class="col-xl-8 col-lg-12 mb-5 d-md-flex justify-content-between">
           <div class="avatar mb-md-0 mb-4 mx-4">
             <img
-              src="./img/others/Roman_Kornilov_Photo&Video.jpg"
+              src="../images/others/Roman_Kornilov_Photo&Video.jpg"
               class="z-depth-1"
               alt="Roman_Kornilov_Photo&Video"
             />
@@ -75,58 +75,76 @@ const IndexPage = () => (
         <div id="mdb-lightbox-ui"></div>
         <div class=" carousel-item active text-center">
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_1.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_1.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_1.jpg"
+                src="../images/workout/workout_112018_1.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
 
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_6.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_6.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_6.jpg"
+                src="../images/workout/workout_112018_6.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
 
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_3.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_3.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_3.jpg"
+                src="../images/workout/workout_112018_3.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
 
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_4.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_4.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_4.jpg"
+                src="../images/workout/workout_112018_4.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_5.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_5.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_5.jpg"
+                src="../images/workout/workout_112018_5.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_2.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_2.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_2.jpg"
+                src="../images/workout/workout_112018_2.jpg"
                 class="img-fluid"
               />
             </a>
@@ -134,58 +152,76 @@ const IndexPage = () => (
         </div>
         <div class="carousel-item text-center">
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_6.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_6.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_6.jpg"
+                src="../images/workout/workout_112018_6.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
 
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_3.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_3.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_3.jpg"
+                src="../images/workout/workout_112018_3.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
 
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_2.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_2.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_2.jpg"
+                src="../images/workout/workout_112018_2.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
 
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_5.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_5.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_4.jpg"
+                src="../images/workout/workout_112018_4.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_1.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_1.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_1.jpg"
+                src="../images/workout/workout_112018_1.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_5.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_5.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_5.jpg"
+                src="../images/workout/workout_112018_5.jpg"
                 class="img-fluid"
               />
             </a>
@@ -193,58 +229,76 @@ const IndexPage = () => (
         </div>
         <div class="carousel-item text-center">
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_3.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_3.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_3.jpg"
+                src="../images/workout/workout_112018_3.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
 
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_2.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_2.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_2.jpg"
+                src="../images/workout/workout_112018_2.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
 
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_1.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_1.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_1.jpg"
+                src="../images/workout/workout_112018_1.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
 
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_4.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_4.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_4.jpg"
+                src="../images/workout/workout_112018_4.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_6.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_6.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_6.jpg"
+                src="../images/workout/workout_112018_6.jpg"
                 class="img-fluid"
               />
             </a>
           </figure>
           <figure class="col-md-4 d-md-inline-block">
-            <a href="./img/workout/workout_112018_5.jpg" data-size="1920x1280">
+            <a
+              href="../images/workout/workout_112018_5.jpg"
+              data-size="1920x1280"
+            >
               <img
                 alt="Workout"
-                src="./img/workout/workout_112018_5.jpg"
+                src="../images/workout/workout_112018_5.jpg"
                 class="img-fluid"
               />
             </a>
