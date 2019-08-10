@@ -1,14 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import {
-  Button,
-  Navbar,
-  Nav,
-  NavDropdown,
-  FormControl,
-  Form,
-} from "react-bootstrap"
+import { Navbar, Nav } from "react-bootstrap"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -21,23 +14,11 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `.5rem 1.0875rem`,
       }}
     >
-      {/* <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1> */}
-
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">
+      <Navbar expand="lg">
+        <Navbar.Brand>
           <Link
             to="/"
             style={{
@@ -50,25 +31,27 @@ const Header = ({ siteTitle }) => (
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+          <Nav className="justify-content-center">
+            <Link className="headerLink" to="/portrait/">
+              portrait
+            </Link>
+            <Link
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+                textTransform: `uppercase`,
+                fontFamily: `sans-serif`,
+                padding: `0 10px`,
+              }}
+              to="/reportage/"
+            >
+              reportage
+            </Link>
+            <Link to="/video/">video</Link>
+            <Link to="/about/">about</Link>
+            <Link to="/price/">price</Link>
+            <Link to="/contacts/">contacts</Link>
           </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Navbar>
     </div>
