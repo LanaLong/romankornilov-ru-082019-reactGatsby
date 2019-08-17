@@ -1,12 +1,14 @@
-import React from "react"
 // import { Link } from "gatsby"
-
-import Layout from "../components/layout"
 // import ControlledCarousel from "../components/carousel"
-import SliderMdb from "../components/sliderMdb"
 // import Image from "../components/image"
+
+import React from "react"
+import Layout from "../components/layout"
+import SliderMdb from "../components/sliderMdb"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 const SectionAbout = styled.div`
   background: #fff;
@@ -17,12 +19,26 @@ const SectionAbout = styled.div`
   margin-bottom: 3rem;
   padding: 2rem;
 `
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "slider/slider_1.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     {/* <ControlledCarousel /> */}
     <SliderMdb />
+    <div>
+      <Img fluid={data.file.childImageSharp.fluid} />
+    </div>
 
     <SectionAbout>
       <div className="row text-center text-md-left justify-content-center pt-4">
