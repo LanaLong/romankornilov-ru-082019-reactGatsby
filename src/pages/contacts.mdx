@@ -1,0 +1,34 @@
+---
+# title: Контакты
+title: Building with Gatsby
+path: /contacts
+date: 2019-01-29
+author: Jay Gatsby
+---
+
+import FAQ from "../components/faq.mdx"
+
+<FAQ />
+<h1>{props.pageContext.frontmatter.title}</h1>
+
+<span>{props.pageContext.frontmatter.author}</span>
+# Контакты
+
+export const metadata = {
+  name: "World",
+  path: "/world",
+}
+
+# Hello, <span children={metadata.name} />
+
+The span above will read: "Hello, World".
+
+<!-- you can also use other variables or data structures -->
+
+export const names = ["Abdullah", "Adam", "Alice", "Aida"]
+
+<ul>
+  {names.map(name => (
+    <li>{name}</li>
+  ))}
+</ul>
