@@ -6,11 +6,15 @@ import Layout from "../components/layout"
 // import MasonryPage from "../components/masonryPage"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
 
-const PortraitPage = () => (
+const PortraitPage = ({data}) => (
   <Layout>
     <SEO title="Роман Корнилов — Портрет" />
     {/* <MasonryPage /> */}
+    <div>
+      <Img fluid={data.file.childImageSharp.fluid} />
+    </div>
     <div id="gallery-lightbox" className="spacing-top-gallery">
       <div className="row pt-2 mt-4">
         <div className="col-md-12">
@@ -412,3 +416,15 @@ const PortraitPage = () => (
 )
 
 export default PortraitPage
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "slider/slider_1.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
